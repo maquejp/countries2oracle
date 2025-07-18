@@ -1,13 +1,14 @@
-# Ruby Countries SQL Generator
+# Ruby Countries SQL Generator - Oracle Edition
 
-This Ruby project generates SQL insert statements for countries, regions, and subregions using the [Countries gem](https://github.com/countries/countries).
+This Ruby project generates **Oracle-compatible** SQL insert statements for countries, regions, and subregions using the [Countries gem](https://github.com/countries/countries).
 
 ## Features
 
-- **Complete database schema**: Creates tables for regions, subregions, and countries with proper foreign key relationships
+- **Complete Oracle database schema**: Creates tables for regions, subregions, and countries with proper foreign key relationships
+- **Oracle-specific syntax**: Uses NUMBER, VARCHAR2, sequences, and triggers for auto-increment functionality
 - **Comprehensive country data**: Includes ISO codes, names, capitals, areas, populations, coordinates, and more
 - **Ruby Countries gem**: Uses the official Countries gem for accurate and up-to-date country data
-- **Clean SQL output**: Properly escaped strings and formatted SQL statements
+- **Oracle-compatible SQL**: Properly formatted for Oracle Database with COMMIT statements
 
 ## Installation
 
@@ -39,36 +40,41 @@ This Ruby project generates SQL insert statements for countries, regions, and su
 ## Database Schema
 
 ### Regions Table
-- `id` (Primary Key, Auto-increment)
-- `name` (VARCHAR(100), UNIQUE)
+- `id` (NUMBER, Primary Key with sequence)
+- `name` (VARCHAR2(100), UNIQUE)
 - `created_at` (TIMESTAMP)
 
 ### Subregions Table
-- `id` (Primary Key, Auto-increment)
-- `name` (VARCHAR(100), UNIQUE)
-- `region_id` (Foreign Key to regions.id)
+- `id` (NUMBER, Primary Key with sequence)
+- `name` (VARCHAR2(100), UNIQUE)
+- `region_id` (NUMBER, Foreign Key to regions.id)
 - `created_at` (TIMESTAMP)
 
 ### Countries Table
-- `id` (Primary Key, Auto-increment)
-- `cca2` (VARCHAR(2), UNIQUE) - ISO 3166-1 alpha-2 code
-- `cca3` (VARCHAR(3), UNIQUE) - ISO 3166-1 alpha-3 code
-- `ccn3` (VARCHAR(3)) - ISO 3166-1 numeric code
-- `name` (VARCHAR(100)) - Common name
-- `official_name` (VARCHAR(200)) - Official name
-- `region` (VARCHAR(50)) - Region name (denormalized)
-- `subregion` (VARCHAR(100)) - Subregion name (denormalized)
-- `region_id` (Foreign Key to regions.id)
-- `subregion_id` (Foreign Key to subregions.id)
-- `capital` (VARCHAR(100)) - Capital city
-- `area` (DECIMAL(15,2)) - Area in square kilometers
-- `population` (BIGINT) - Population count
-- `independent` (BOOLEAN) - Independence status
-- `un_member` (BOOLEAN) - UN membership status
-- `flag` (VARCHAR(10)) - Flag emoji
-- `latitude` (DECIMAL(10,8)) - Latitude coordinate
-- `longitude` (DECIMAL(11,8)) - Longitude coordinate
+- `id` (NUMBER, Primary Key with sequence)
+- `cca2` (VARCHAR2(2), UNIQUE) - ISO 3166-1 alpha-2 code
+- `cca3` (VARCHAR2(3), UNIQUE) - ISO 3166-1 alpha-3 code
+- `ccn3` (VARCHAR2(3)) - ISO 3166-1 numeric code
+- `name` (VARCHAR2(100)) - Common name
+- `official_name` (VARCHAR2(200)) - Official name
+- `region` (VARCHAR2(50)) - Region name (denormalized)
+- `subregion` (VARCHAR2(100)) - Subregion name (denormalized)
+- `region_id` (NUMBER, Foreign Key to regions.id)
+- `subregion_id` (NUMBER, Foreign Key to subregions.id)
+- `capital` (VARCHAR2(100)) - Capital city
+- `area` (NUMBER(15,2)) - Area in square kilometers
+- `population` (NUMBER(15)) - Population count
+- `independent` (NUMBER(1)) - Independence status (1=true, 0=false)
+- `un_member` (NUMBER(1)) - UN membership status (1=true, 0=false)
+- `flag` (VARCHAR2(10)) - Flag emoji
+- `latitude` (NUMBER(10,8)) - Latitude coordinate
+- `longitude` (NUMBER(11,8)) - Longitude coordinate
 - `created_at` (TIMESTAMP)
+
+### Oracle-Specific Features
+- **Sequences**: Auto-increment functionality using Oracle sequences
+- **Triggers**: Automatic ID assignment on INSERT
+- **Constraints**: Named foreign key constraints for better management
 
 ## Usage
 
@@ -77,11 +83,8 @@ This Ruby project generates SQL insert statements for countries, regions, and su
 # Generate combined SQL file
 ruby generate_countries_sql.rb > countries_data_ruby.sql
 
-# Import into MySQL
-mysql -u username -p database_name < countries_data_ruby.sql
-
-# Import into PostgreSQL
-psql -U username -d database_name -f countries_data_ruby.sql
+# Import into Oracle
+sqlplus username/password@database @countries_data_ruby.sql
 ```
 
 ### Separate Files Import
@@ -90,13 +93,14 @@ psql -U username -d database_name -f countries_data_ruby.sql
 ruby generate_countries_sql.rb --separate
 
 # Manual import (maintain order for foreign keys)
-mysql -u username -p database_name < SQLs/schema.sql
-mysql -u username -p database_name < SQLs/regions.sql
-mysql -u username -p database_name < SQLs/subregions.sql
-mysql -u username -p database_name < SQLs/countries.sql
+sqlplus username/password@database @SQLs/schema.sql
+sqlplus username/password@database @SQLs/regions.sql
+sqlplus username/password@database @SQLs/subregions.sql
+sqlplus username/password@database @SQLs/countries.sql
 
 # OR use the automated import script
-./import.sh database_name username
+export PASSWORD=your_password
+./import.sh username database_connection_string
 ```
 
 ## Data Source

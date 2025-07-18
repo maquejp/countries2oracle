@@ -1,23 +1,23 @@
 #!/bin/bash
 
-# Import script for Countries database
+# Import script for Countries database - Oracle version
 # This script imports all SQL files in the correct order
 
 # Usage:
-# ./import.sh [database_name] [username]
-# Example: ./import.sh countries_db root
+# ./import.sh [username] [database]
+# Example: ./import.sh scott localhost:1521/XE
 
-DATABASE=${1:-countries_db}
-USERNAME=${2:-root}
+USERNAME=${1:-scott}
+DATABASE=${2:-localhost:1521/XE}
 
-echo "Importing Countries database..."
-echo "Database: $DATABASE"
+echo "Importing Countries database to Oracle..."
 echo "Username: $USERNAME"
+echo "Database: $DATABASE"
 echo ""
 
-# Check if MySQL is available
-if ! command -v mysql &> /dev/null; then
-    echo "Error: MySQL client not found. Please install MySQL client."
+# Check if SQL*Plus is available
+if ! command -v sqlplus &> /dev/null; then
+    echo "Error: SQL*Plus not found. Please install Oracle client."
     exit 1
 fi
 
@@ -28,28 +28,28 @@ if [ ! -f "SQLs/schema.sql" ]; then
 fi
 
 echo "Step 1: Creating database schema..."
-mysql -u "$USERNAME" -p "$DATABASE" < SQLs/schema.sql
+sqlplus "$USERNAME/$PASSWORD@$DATABASE" @SQLs/schema.sql
 if [ $? -ne 0 ]; then
     echo "Error: Failed to create schema"
     exit 1
 fi
 
 echo "Step 2: Importing regions..."
-mysql -u "$USERNAME" -p "$DATABASE" < SQLs/regions.sql
+sqlplus "$USERNAME/$PASSWORD@$DATABASE" @SQLs/regions.sql
 if [ $? -ne 0 ]; then
     echo "Error: Failed to import regions"
     exit 1
 fi
 
 echo "Step 3: Importing subregions..."
-mysql -u "$USERNAME" -p "$DATABASE" < SQLs/subregions.sql
+sqlplus "$USERNAME/$PASSWORD@$DATABASE" @SQLs/subregions.sql
 if [ $? -ne 0 ]; then
     echo "Error: Failed to import subregions"
     exit 1
 fi
 
 echo "Step 4: Importing countries..."
-mysql -u "$USERNAME" -p "$DATABASE" < SQLs/countries.sql
+sqlplus "$USERNAME/$PASSWORD@$DATABASE" @SQLs/countries.sql
 if [ $? -ne 0 ]; then
     echo "Error: Failed to import countries"
     exit 1

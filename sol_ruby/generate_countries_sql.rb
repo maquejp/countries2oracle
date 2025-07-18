@@ -78,49 +78,94 @@ class CountriesSQLGenerator
 
   def generate_create_tables_sql
     <<~SQL
-      -- Create tables for regions, subregions, and countries
+      -- Create tables for regions, subregions, and countries (Oracle compatible)
       
-      DROP TABLE IF EXISTS countries;
-      DROP TABLE IF EXISTS subregions;
-      DROP TABLE IF EXISTS regions;
+      -- Drop tables in reverse order due to foreign key constraints
+      DROP TABLE countries CASCADE CONSTRAINTS;
+      DROP TABLE subregions CASCADE CONSTRAINTS;
+      DROP TABLE regions CASCADE CONSTRAINTS;
       
+      -- Drop sequences if they exist
+      DROP SEQUENCE regions_seq;
+      DROP SEQUENCE subregions_seq;
+      DROP SEQUENCE countries_seq;
+      
+      -- Create sequences for auto-increment functionality
+      CREATE SEQUENCE regions_seq START WITH 1 INCREMENT BY 1;
+      CREATE SEQUENCE subregions_seq START WITH 1 INCREMENT BY 1;
+      CREATE SEQUENCE countries_seq START WITH 1 INCREMENT BY 1;
+      
+      -- Create regions table
       CREATE TABLE regions (
-          id INT PRIMARY KEY AUTO_INCREMENT,
-          name VARCHAR(100) UNIQUE NOT NULL,
+          id NUMBER PRIMARY KEY,
+          name VARCHAR2(100) UNIQUE NOT NULL,
           created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
       );
       
+      -- Create subregions table
       CREATE TABLE subregions (
-          id INT PRIMARY KEY AUTO_INCREMENT,
-          name VARCHAR(100) UNIQUE NOT NULL,
-          region_id INT NOT NULL,
+          id NUMBER PRIMARY KEY,
+          name VARCHAR2(100) UNIQUE NOT NULL,
+          region_id NUMBER NOT NULL,
           created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-          FOREIGN KEY (region_id) REFERENCES regions(id)
+          CONSTRAINT fk_subregions_region FOREIGN KEY (region_id) REFERENCES regions(id)
       );
       
+      -- Create countries table
       CREATE TABLE countries (
-          id INT PRIMARY KEY AUTO_INCREMENT,
-          cca2 VARCHAR(2) UNIQUE NOT NULL,
-          cca3 VARCHAR(3) UNIQUE NOT NULL,
-          ccn3 VARCHAR(3),
-          name VARCHAR(100) NOT NULL,
-          official_name VARCHAR(200),
-          region VARCHAR(50),
-          subregion VARCHAR(100),
-          region_id INT,
-          subregion_id INT,
-          capital VARCHAR(100),
-          area DECIMAL(15,2),
-          population BIGINT,
-          independent BOOLEAN,
-          un_member BOOLEAN,
-          flag VARCHAR(10),
-          latitude DECIMAL(10,8),
-          longitude DECIMAL(11,8),
+          id NUMBER PRIMARY KEY,
+          cca2 VARCHAR2(2) UNIQUE NOT NULL,
+          cca3 VARCHAR2(3) UNIQUE NOT NULL,
+          ccn3 VARCHAR2(3),
+          name VARCHAR2(100) NOT NULL,
+          official_name VARCHAR2(200),
+          region VARCHAR2(50),
+          subregion VARCHAR2(100),
+          region_id NUMBER,
+          subregion_id NUMBER,
+          capital VARCHAR2(100),
+          area NUMBER(15,2),
+          population NUMBER(15),
+          independent NUMBER(1) DEFAULT 0,
+          un_member NUMBER(1) DEFAULT 0,
+          flag VARCHAR2(10),
+          latitude NUMBER(10,8),
+          longitude NUMBER(11,8),
           created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-          FOREIGN KEY (region_id) REFERENCES regions(id),
-          FOREIGN KEY (subregion_id) REFERENCES subregions(id)
+          CONSTRAINT fk_countries_region FOREIGN KEY (region_id) REFERENCES regions(id),
+          CONSTRAINT fk_countries_subregion FOREIGN KEY (subregion_id) REFERENCES subregions(id)
       );
+      
+      -- Create triggers for auto-increment functionality
+      CREATE OR REPLACE TRIGGER regions_trigger
+      BEFORE INSERT ON regions
+      FOR EACH ROW
+      BEGIN
+          IF :NEW.id IS NULL THEN
+              :NEW.id := regions_seq.NEXTVAL;
+          END IF;
+      END;
+      /
+      
+      CREATE OR REPLACE TRIGGER subregions_trigger
+      BEFORE INSERT ON subregions
+      FOR EACH ROW
+      BEGIN
+          IF :NEW.id IS NULL THEN
+              :NEW.id := subregions_seq.NEXTVAL;
+          END IF;
+      END;
+      /
+      
+      CREATE OR REPLACE TRIGGER countries_trigger
+      BEFORE INSERT ON countries
+      FOR EACH ROW
+      BEGIN
+          IF :NEW.id IS NULL THEN
+              :NEW.id := countries_seq.NEXTVAL;
+          END IF;
+      END;
+      /
       
     SQL
   end
@@ -131,6 +176,8 @@ class CountriesSQLGenerator
       sql += "INSERT INTO regions (id, name) VALUES (#{index + 1}, '#{escape_sql(region)}');\n"
     end
     sql += "\n"
+    sql += "-- Commit the transaction\n"
+    sql += "COMMIT;\n"
   end
 
   def generate_subregions_sql
@@ -146,6 +193,8 @@ class CountriesSQLGenerator
       sql += "INSERT INTO subregions (id, name, region_id) VALUES (#{index + 1}, '#{escape_sql(subregion)}', #{region_id});\n"
     end
     sql += "\n"
+    sql += "-- Commit the transaction\n"
+    sql += "COMMIT;\n"
   end
 
   def generate_countries_sql
@@ -180,9 +229,9 @@ class CountriesSQLGenerator
       sql += ", "
       sql += country[:population] ? country[:population].to_s : "NULL"
       sql += ", "
-      sql += country[:independent] ? "TRUE" : "FALSE"
+      sql += country[:independent] ? "1" : "0"
       sql += ", "
-      sql += country[:un_member] ? "TRUE" : "FALSE"
+      sql += country[:un_member] ? "1" : "0"
       sql += ", "
       sql += country[:flag] ? "'#{country[:flag]}'" : "NULL"
       sql += ", "
@@ -192,6 +241,8 @@ class CountriesSQLGenerator
       sql += ");\n"
     end
     sql += "\n"
+    sql += "-- Commit the transaction\n"
+    sql += "COMMIT;\n"
   end
 
   def find_region_for_subregion(subregion)

@@ -22,3 +22,5 @@ INSERT INTO subregions (id, name, region_id) VALUES (20, 'Western Africa', 1);
 INSERT INTO subregions (id, name, region_id) VALUES (21, 'Western Asia', 3);
 INSERT INTO subregions (id, name, region_id) VALUES (22, 'Western Europe', 4);
 
+-- Commit the transaction
+COMMIT;
