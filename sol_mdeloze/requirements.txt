@@ -1,0 +1,12 @@
+# Python Standard Library Only
+# No external dependencies required
+
+# This script uses only Python standard library modules:
+# - json (for parsing JSON data)
+# - os (for file operations)
+# - re (for regular expressions)
+# - collections.defaultdict (for data structures)
+# - datetime (for timestamps)
+# - typing (for type hints)
+
+# Python 3.6+ required for f-strings and other modern features
