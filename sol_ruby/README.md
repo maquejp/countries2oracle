@@ -72,9 +72,10 @@ This Ruby project generates **Oracle-compatible** SQL insert statements for coun
 - `created_at` (TIMESTAMP)
 
 ### Oracle-Specific Features
-- **Sequences**: Auto-increment functionality using Oracle sequences
-- **Triggers**: Automatic ID assignment on INSERT
-- **Constraints**: Named foreign key constraints for better management
+- **Manual ID assignment**: Explicit ID values in INSERT statements
+- **Named Constraints**: Better foreign key management
+- **CASCADE CONSTRAINTS**: Proper table dropping order
+- **COMMIT Statements**: Transaction control for data integrity
 
 ## Usage
 
