@@ -1,0 +1,23 @@
+{
+    "name": "countries-sql-generator",
+    "version": "1.0.0",
+    "description": "Generate SQL insert statements for countries, regions, and subregions",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js",
+        "dev": "node --watch index.js",
+        "test": "node test.js",
+        "convert": "node convert.js"
+    },
+    "keywords": [
+        "countries",
+        "sql",
+        "regions",
+        "subregions"
+    ],
+    "author": "",
+    "license": "MIT",
+    "dependencies": {
+        "world-countries": "^5.1.0"
+    }
+}
