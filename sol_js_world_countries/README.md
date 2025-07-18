@@ -1,47 +1,49 @@
-# Countries SQL Generator
+# Countries SQL Generator for Oracle
 
-This project generates SQL insert statements for countries, regions, and subregions using data from the [`world-countries`](https://github.com/mledoze/world-countries) package.
+This project generates Oracle SQL insert statements for countries, regions, and subregions using data from the [`world-countries`](https://github.com/mledoze/world-countries) package.
 
 ## Features
 
 - **Three separate tables**: `regions`, `subregions`, and `countries`
 - **Foreign key relationships**: Subregions link to regions, countries link to both regions and subregions
 - **Comprehensive data**: Includes country codes (ISO 3166-1 alpha-2, alpha-3, numeric), names, capitals, areas, flags, coordinates, and more
+- **Oracle-optimized**: Uses Oracle-specific data types and syntax (without sequences/triggers)
 - **Clean SQL output**: Properly escaped strings and formatted SQL
+- **Organized structure**: All SQL files are generated in the `SQLs` folder
 
-## Database Schema
+## Oracle Database Schema
 
 ### Regions Table
-- `id` (Primary Key)
-- `name` (VARCHAR(100), UNIQUE)
-- `created_at` (TIMESTAMP)
+- `id` NUMBER(10) PRIMARY KEY
+- `name` VARCHAR2(100) NOT NULL UNIQUE
+- `created_at` TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 
 ### Subregions Table
-- `id` (Primary Key)
-- `name` (VARCHAR(100), UNIQUE)
-- `region_id` (Foreign Key to regions.id)
-- `created_at` (TIMESTAMP)
+- `id` NUMBER(10) PRIMARY KEY
+- `name` VARCHAR2(100) NOT NULL UNIQUE
+- `region_id` NUMBER(10) - Foreign Key to regions.id
+- `created_at` TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 
 ### Countries Table
-- `id` (Primary Key, Auto-increment)
-- `cca2` (VARCHAR(2), UNIQUE) - ISO 3166-1 alpha-2 code
-- `cca3` (VARCHAR(3), UNIQUE) - ISO 3166-1 alpha-3 code
-- `ccn3` (VARCHAR(3)) - ISO 3166-1 numeric code
-- `name` (VARCHAR(100)) - Common name
-- `official_name` (VARCHAR(200)) - Official name
-- `region` (VARCHAR(50)) - Region name (denormalized)
-- `subregion` (VARCHAR(100)) - Subregion name (denormalized)
-- `region_id` (Foreign Key to regions.id)
-- `subregion_id` (Foreign Key to subregions.id)
-- `capital` (VARCHAR(100)) - Capital city
-- `area` (DECIMAL(15,2)) - Area in square kilometers
-- `population` (BIGINT) - Population count
-- `independent` (BOOLEAN) - Independence status
-- `un_member` (BOOLEAN) - UN membership status
-- `flag` (VARCHAR(10)) - Flag emoji
-- `latitude` (DECIMAL(10,8)) - Latitude coordinate
-- `longitude` (DECIMAL(11,8)) - Longitude coordinate
-- `created_at` (TIMESTAMP)
+- `id` NUMBER(10) PRIMARY KEY
+- `cca2` VARCHAR2(2) NOT NULL UNIQUE - ISO 3166-1 alpha-2 code
+- `cca3` VARCHAR2(3) NOT NULL UNIQUE - ISO 3166-1 alpha-3 code
+- `ccn3` VARCHAR2(3) - ISO 3166-1 numeric code
+- `name` VARCHAR2(100) NOT NULL - Common name
+- `official_name` VARCHAR2(200) - Official name
+- `region` VARCHAR2(50) - Region name (denormalized)
+- `subregion` VARCHAR2(100) - Subregion name (denormalized)
+- `region_id` NUMBER(10) - Foreign Key to regions.id
+- `subregion_id` NUMBER(10) - Foreign Key to subregions.id
+- `capital` VARCHAR2(100) - Capital city
+- `area` NUMBER(15,2) - Area in square kilometers
+- `population` NUMBER(19) - Population count
+- `independent` NUMBER(1) CHECK (independent IN (0, 1)) - Independence status
+- `un_member` NUMBER(1) CHECK (un_member IN (0, 1)) - UN membership status
+- `flag` VARCHAR2(10) - Flag emoji
+- `latitude` NUMBER(10,8) - Latitude coordinate
+- `longitude` NUMBER(11,8) - Longitude coordinate
+- `created_at` TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 
 ## Data Overview
 
@@ -70,29 +72,58 @@ The generated SQL includes:
 
 ## Usage
 
-### Generate SQL Files
+### Generate Oracle SQL Files
 
 Run the generator:
 ```bash
 npm start
 ```
 
-This will create two files:
-- `countries_data.sql` - Complete SQL with CREATE TABLE and INSERT statements (MySQL/MariaDB format)
+This will create separate files in the `SQLs` folder:
+- `01_create_tables.sql` - Oracle table creation statements
+- `02_regions_data.sql` - INSERT statements for regions (6 records)
+- `03_subregions_data.sql` - INSERT statements for subregions (24 records)
+- `04_countries_data.sql` - INSERT statements for countries (250 records)
+- `countries_data_oracle.sql` - Complete SQL file with all statements
 - `countries_summary.json` - Summary of the data structure
+- `migration.sql` - Oracle-specific migration script with setup instructions
+- `run_all.sql` - SQL*Plus script to execute all files in order with progress messages
 
-### Generate Database-Specific Files
+### Separate File Benefits
 
-To generate SQL files for different database systems:
-```bash
-npm run convert
+- **Modular execution**: Run only the parts you need
+- **Easier debugging**: Isolate issues to specific data sets
+- **Selective updates**: Update only countries without recreating tables
+- **Better organization**: Clear separation of structure and data
+- **Deployment flexibility**: Choose complete file or step-by-step execution
+
+### Execution Options
+
+**Option 1: Run separate files in order**
+```sql
+@01_create_tables.sql
+@02_regions_data.sql
+@03_subregions_data.sql
+@04_countries_data.sql
 ```
 
-This will create:
-- `countries_data_postgresql.sql` - PostgreSQL format
-- `countries_data_sqlite.sql` - SQLite format  
-- `countries_data_sqlserver.sql` - SQL Server format
-- `migration.sql` - Migration script with setup instructions
+**Option 2: Use the automated script**
+```sql
+@run_all.sql
+```
+
+**Option 3: Run complete file**
+```sql
+@countries_data_oracle.sql
+```
+
+### Oracle Features
+
+- **No sequences or triggers**: Uses manual ID assignment for all tables
+- **Named constraints**: Uses `CONSTRAINT fk_name FOREIGN KEY` syntax
+- **Check constraints**: Boolean fields use `NUMBER(1)` with `CHECK (field IN (0, 1))`
+- **Oracle data types**: Uses `NUMBER()`, `VARCHAR2()`, and `TIMESTAMP`
+- **Proper escaping**: All string values are properly escaped for Oracle SQL
 
 ### Run Tests
 

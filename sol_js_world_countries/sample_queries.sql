@@ -1,5 +1,6 @@
--- Sample queries for the countries database
+-- Oracle SQL sample queries for the countries database
 -- These queries demonstrate how to use the generated countries, regions, and subregions tables
+-- Compatible with Oracle Database
 
 -- 1. Get all regions with country counts
 SELECT 

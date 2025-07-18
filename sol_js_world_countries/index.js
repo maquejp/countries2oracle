@@ -65,47 +65,47 @@ class CountriesSQLGenerator {
     }
 
     /**
-     * Generate SQL for creating tables
+     * Generate SQL for creating tables (Oracle format)
      */
     generateCreateTableStatements() {
-        return `-- Create tables for countries, regions, and subregions
+        return `-- Create tables for countries, regions, and subregions (Oracle format)
     
-CREATE TABLE IF NOT EXISTS regions (
-    id INT PRIMARY KEY,
-    name VARCHAR(100) NOT NULL UNIQUE,
+CREATE TABLE regions (
+    id NUMBER(10) PRIMARY KEY,
+    name VARCHAR2(100) NOT NULL UNIQUE,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
-CREATE TABLE IF NOT EXISTS subregions (
-    id INT PRIMARY KEY,
-    name VARCHAR(100) NOT NULL UNIQUE,
-    region_id INT,
+CREATE TABLE subregions (
+    id NUMBER(10) PRIMARY KEY,
+    name VARCHAR2(100) NOT NULL UNIQUE,
+    region_id NUMBER(10),
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    FOREIGN KEY (region_id) REFERENCES regions(id)
+    CONSTRAINT fk_subregions_region FOREIGN KEY (region_id) REFERENCES regions(id)
 );
 
-CREATE TABLE IF NOT EXISTS countries (
-    id INT PRIMARY KEY AUTO_INCREMENT,
-    cca2 VARCHAR(2) NOT NULL UNIQUE,
-    cca3 VARCHAR(3) NOT NULL UNIQUE,
-    ccn3 VARCHAR(3),
-    name VARCHAR(100) NOT NULL,
-    official_name VARCHAR(200),
-    region VARCHAR(50),
-    subregion VARCHAR(100),
-    region_id INT,
-    subregion_id INT,
-    capital VARCHAR(100),
-    area DECIMAL(15,2),
-    population BIGINT,
-    independent BOOLEAN,
-    un_member BOOLEAN,
-    flag VARCHAR(10),
-    latitude DECIMAL(10,8),
-    longitude DECIMAL(11,8),
+CREATE TABLE countries (
+    id NUMBER(10) PRIMARY KEY,
+    cca2 VARCHAR2(2) NOT NULL UNIQUE,
+    cca3 VARCHAR2(3) NOT NULL UNIQUE,
+    ccn3 VARCHAR2(3),
+    name VARCHAR2(100) NOT NULL,
+    official_name VARCHAR2(200),
+    region VARCHAR2(50),
+    subregion VARCHAR2(100),
+    region_id NUMBER(10),
+    subregion_id NUMBER(10),
+    capital VARCHAR2(100),
+    area NUMBER(15,2),
+    population NUMBER(19),
+    independent NUMBER(1) CHECK (independent IN (0, 1)),
+    un_member NUMBER(1) CHECK (un_member IN (0, 1)),
+    flag VARCHAR2(10),
+    latitude NUMBER(10,8),
+    longitude NUMBER(11,8),
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    FOREIGN KEY (region_id) REFERENCES regions(id),
-    FOREIGN KEY (subregion_id) REFERENCES subregions(id)
+    CONSTRAINT fk_countries_region FOREIGN KEY (region_id) REFERENCES regions(id),
+    CONSTRAINT fk_countries_subregion FOREIGN KEY (subregion_id) REFERENCES subregions(id)
 );
 
 `;
@@ -148,8 +148,9 @@ CREATE TABLE IF NOT EXISTS countries (
         let sql = '-- Insert countries\n';
 
         const countryValues = this.countries
-            .map(country => {
+            .map((country, index) => {
                 const values = [
+                    index + 1, // Generate sequential ID for Oracle
                     `'${this.escapeString(country.cca2)}'`,
                     `'${this.escapeString(country.cca3)}'`,
                     country.ccn3 ? `'${this.escapeString(country.ccn3)}'` : 'NULL',
@@ -162,8 +163,8 @@ CREATE TABLE IF NOT EXISTS countries (
                     country.capital ? `'${this.escapeString(country.capital)}'` : 'NULL',
                     country.area || 'NULL',
                     country.population || 'NULL',
-                    country.independent !== undefined ? (country.independent ? 'TRUE' : 'FALSE') : 'NULL',
-                    country.unMember !== undefined ? (country.unMember ? 'TRUE' : 'FALSE') : 'NULL',
+                    country.independent !== undefined ? (country.independent ? '1' : '0') : 'NULL',
+                    country.unMember !== undefined ? (country.unMember ? '1' : '0') : 'NULL',
                     country.flag ? `'${this.escapeString(country.flag)}'` : 'NULL',
                     country.latitude || 'NULL',
                     country.longitude || 'NULL'
@@ -173,7 +174,7 @@ CREATE TABLE IF NOT EXISTS countries (
             })
             .join(',\n    ');
 
-        sql += `INSERT INTO countries (cca2, cca3, ccn3, name, official_name, region, subregion, region_id, subregion_id, capital, area, population, independent, un_member, flag, latitude, longitude) VALUES\n    ${countryValues};\n\n`;
+        sql += `INSERT INTO countries (id, cca2, cca3, ccn3, name, official_name, region, subregion, region_id, subregion_id, capital, area, population, independent, un_member, flag, latitude, longitude) VALUES\n    ${countryValues};\n\n`;
 
         return sql;
     }
@@ -192,11 +193,12 @@ CREATE TABLE IF NOT EXISTS countries (
     generateSQL() {
         this.processCountries();
 
-        let sql = `-- Generated SQL for Countries, Regions, and Subregions
+        let sql = `-- Generated Oracle SQL for Countries, Regions, and Subregions
 -- Generated on: ${new Date().toISOString()}
 -- Total countries: ${this.countries.length}
 -- Total regions: ${this.regions.size}
 -- Total subregions: ${this.subregions.size}
+-- Database: Oracle (without sequences/triggers)
 
 `;
 
@@ -209,20 +211,70 @@ CREATE TABLE IF NOT EXISTS countries (
     }
 
     /**
-     * Save SQL to file
+     * Save SQL to separate files
      */
-    saveToFile(filename = 'countries_data.sql') {
-        const sql = this.generateSQL();
-        const filePath = path.join(__dirname, filename);
+    saveToFiles() {
+        this.processCountries();
 
-        fs.writeFileSync(filePath, sql, 'utf8');
-        console.log(`SQL file saved to: ${filePath}`);
+        // Ensure SQLs directory exists
+        const sqlsDir = path.join(__dirname, 'SQLs');
+        if (!fs.existsSync(sqlsDir)) {
+            fs.mkdirSync(sqlsDir, { recursive: true });
+        }
 
-        // Also generate a summary
+        const timestamp = new Date().toISOString();
+        const header = `-- Generated Oracle SQL for Countries Database
+-- Generated on: ${timestamp}
+-- Total countries: ${this.countries.length}
+-- Total regions: ${this.regions.size}
+-- Total subregions: ${this.subregions.size}
+-- Database: Oracle (without sequences/triggers)
+
+`;
+
+        // 1. Create tables file
+        const createTablesSQL = header + this.generateCreateTableStatements();
+        const createTablesPath = path.join(sqlsDir, '01_create_tables.sql');
+        fs.writeFileSync(createTablesPath, createTablesSQL, 'utf8');
+        console.log(`Tables creation file saved to: ${createTablesPath}`);
+
+        // 2. Regions data file
+        const regionsSQL = header + this.generateRegionInserts();
+        const regionsPath = path.join(sqlsDir, '02_regions_data.sql');
+        fs.writeFileSync(regionsPath, regionsSQL, 'utf8');
+        console.log(`Regions data file saved to: ${regionsPath}`);
+
+        // 3. Subregions data file
+        const subregionsSQL = header + this.generateSubregionInserts();
+        const subregionsPath = path.join(sqlsDir, '03_subregions_data.sql');
+        fs.writeFileSync(subregionsPath, subregionsSQL, 'utf8');
+        console.log(`Subregions data file saved to: ${subregionsPath}`);
+
+        // 4. Countries data file
+        const countriesSQL = header + this.generateCountryInserts();
+        const countriesPath = path.join(sqlsDir, '04_countries_data.sql');
+        fs.writeFileSync(countriesPath, countriesSQL, 'utf8');
+        console.log(`Countries data file saved to: ${countriesPath}`);
+
+        // 5. Keep the complete file as well
+        const completeSQL = header + this.generateCreateTableStatements() +
+            this.generateRegionInserts() +
+            this.generateSubregionInserts() +
+            this.generateCountryInserts();
+        const completePath = path.join(sqlsDir, 'countries_data_oracle.sql');
+        fs.writeFileSync(completePath, completeSQL, 'utf8');
+        console.log(`Complete SQL file saved to: ${completePath}`);
+
+        // Generate summary
         this.generateSummary();
     }
 
     /**
+     * Save SQL to file (legacy method - now calls saveToFiles)
+     */
+    saveToFile(filename = 'countries_data_oracle.sql') {
+        this.saveToFiles();
+    }    /**
      * Generate a summary of the data
      */
     generateSummary() {
@@ -250,7 +302,13 @@ CREATE TABLE IF NOT EXISTS countries (
             }
         });
 
-        const summaryPath = path.join(__dirname, 'countries_summary.json');
+        // Save to SQLs folder
+        const sqlsDir = path.join(__dirname, 'SQLs');
+        if (!fs.existsSync(sqlsDir)) {
+            fs.mkdirSync(sqlsDir, { recursive: true });
+        }
+
+        const summaryPath = path.join(sqlsDir, 'countries_summary.json');
         fs.writeFileSync(summaryPath, JSON.stringify(summary, null, 2), 'utf8');
         console.log(`Summary saved to: ${summaryPath}`);
 
