@@ -1,5 +1,5 @@
 -- Insert statements for COUNTRIES table
--- Generated on: 2025-07-18 17:31:08
+-- Generated on: 2025-07-18 17:55:29
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
