@@ -83,4 +83,4 @@ else
     echo "✗ Error occurred during SQL generation"
     exit 1
 fi
-# --- generated commit ---
+
