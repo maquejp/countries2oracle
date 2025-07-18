@@ -1,5 +1,5 @@
 -- Oracle SQL Table Creation Script
--- Generated on: 2025-07-18 17:26:50
+-- Generated on: 2025-07-18 17:31:08
 -- Based on: https://github.com/mledoze/countries
 
 -- Drop tables if they exist (in correct order due to foreign keys)

@@ -1,5 +1,5 @@
 -- Insert statements for SUBREGIONS table
--- Generated on: 2025-07-18 17:26:50
+-- Generated on: 2025-07-18 17:31:08
 
 INSERT INTO subregions (subregion_id, subregion_name, region_id) VALUES (1, 'Australia and New Zealand', 6);
 INSERT INTO subregions (subregion_id, subregion_name, region_id) VALUES (2, 'Caribbean', 2);
