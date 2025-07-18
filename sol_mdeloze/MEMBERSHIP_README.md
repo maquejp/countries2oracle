@@ -4,9 +4,9 @@ This directory contains scripts to work with countries data that includes EU, EF
 
 ## Files
 
-- `countries.json` - Original countries data from [mledoze/countries](https://github.com/mledoze/countries)
-- `countries_original.json` - Backup of the original file
-- `countries_amended.json` - Countries data with added membership fields
+- `data/countries.json` - Original countries data from [mledoze/countries](https://github.com/mledoze/countries)
+- `data/countries_original.json` - Backup of the original file
+- `data/countries_amended.json` - Countries data with added membership fields
 - `add_membership_fields.py` - Script to add membership fields to countries data
 - `generate_oracle_sql.py` - Script to generate Oracle SQL from countries data
 - `SQLs/` - Directory containing generated SQL files
@@ -33,8 +33,8 @@ This directory contains scripts to work with countries data that includes EU, EF
 
 3. **Use specific input file:**
    ```bash
-   python3 generate_oracle_sql.py countries.json
-   python3 generate_oracle_sql.py countries_amended.json
+   python3 generate_oracle_sql.py data/countries.json
+   python3 generate_oracle_sql.py data/countries_amended.json
    ```
 
 ## Database Schema

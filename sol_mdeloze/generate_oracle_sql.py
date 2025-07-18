@@ -551,7 +551,7 @@ def main():
     import sys
     
     # Default values - use amended file if available, otherwise original
-    json_file = "countries_amended.json" if os.path.exists("countries_amended.json") else "countries.json"
+    json_file = "data/countries_amended.json" if os.path.exists("data/countries_amended.json") else "data/countries.json"
     output_dir = "SQLs"
     
     # Check for command line arguments
@@ -563,11 +563,12 @@ def main():
     # Check if JSON file exists
     if not os.path.exists(json_file):
         print(f"Error: {json_file} not found!")
-        if json_file == "countries_amended.json":
+        if json_file == "data/countries_amended.json":
             print("Run 'python3 add_membership_fields.py' first to create the amended file.")
         else:
             print("Please download the countries.json file from:")
             print("https://raw.githubusercontent.com/mledoze/countries/master/countries.json")
+            print("and place it in the data/ folder.")
         sys.exit(1)
     
     print(f"Using JSON file: {json_file}")

@@ -1,5 +1,5 @@
 -- Example queries for the Countries database
--- Generated on: 2025-07-18 17:14:59
+-- Generated on: 2025-07-18 17:26:50
 
 -- 1. Get all regions with count of countries
 SELECT r.region_name, COUNT(c.country_id) as country_count

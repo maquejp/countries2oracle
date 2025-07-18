@@ -23,13 +23,13 @@ EFTA_MEMBERS = {
 # EEA member countries (EU + EFTA except Switzerland)
 EEA_MEMBERS = EU_MEMBERS | {'ISL', 'LIE', 'NOR'}
 
-def add_membership_fields(input_file='countries.json', output_file='countries_amended.json'):
+def add_membership_fields(input_file='data/countries.json', output_file='data/countries_amended.json'):
     """Add euMember, eftaMember, and eeaMember fields to countries.json"""
     
     # Create backup of original if it doesn't exist
-    if not os.path.exists('countries_original.json') and os.path.exists('countries.json'):
-        shutil.copy2('countries.json', 'countries_original.json')
-        print("Created backup: countries_original.json")
+    if not os.path.exists('data/countries_original.json') and os.path.exists('data/countries.json'):
+        shutil.copy2('data/countries.json', 'data/countries_original.json')
+        print("Created backup: data/countries_original.json")
     
     # Read the existing JSON file
     with open(input_file, 'r', encoding='utf-8') as f:
@@ -69,5 +69,5 @@ if __name__ == "__main__":
     # Create amended version while preserving original
     amended_file = add_membership_fields()
     print(f"\nAmended file created: {amended_file}")
-    print("Original file preserved as: countries.json")
-    print("Backup created as: countries_original.json")
+    print("Original file preserved as: data/countries.json")
+    print("Backup created as: data/countries_original.json")
