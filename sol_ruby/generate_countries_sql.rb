@@ -69,6 +69,8 @@ class CountriesSQLGenerator
         population: country.data['population'],
         independent: country.data['independent'],
         un_member: country.data['un_member'],
+        eea_member: country.data['eea_member'],
+        eu_member: country.data['eu_member'],
         flag: country.emoji_flag,
         latitude: country.latitude,
         longitude: country.longitude
@@ -118,6 +120,8 @@ class CountriesSQLGenerator
           population NUMBER(15),
           independent NUMBER(1) DEFAULT 0,
           un_member NUMBER(1) DEFAULT 0,
+          eea_member NUMBER(1) DEFAULT 0,
+          eu_member NUMBER(1) DEFAULT 0,
           flag VARCHAR2(10),
           latitude NUMBER(10,8),
           longitude NUMBER(11,8),
@@ -168,7 +172,7 @@ class CountriesSQLGenerator
       sql += "INSERT INTO countries ("
       sql += "id, cca2, cca3, ccn3, name, official_name, region, subregion, "
       sql += "region_id, subregion_id, capital, area, population, independent, "
-      sql += "un_member, flag, latitude, longitude"
+      sql += "un_member, eea_member, eu_member, flag, latitude, longitude"
       sql += ") VALUES ("
       sql += "#{index + 1}, "
       sql += "'#{escape_sql(country[:alpha2])}', "
@@ -191,6 +195,10 @@ class CountriesSQLGenerator
       sql += country[:independent] ? "1" : "0"
       sql += ", "
       sql += country[:un_member] ? "1" : "0"
+      sql += ", "
+      sql += country[:eea_member] ? "1" : "0"
+      sql += ", "
+      sql += country[:eu_member] ? "1" : "0"
       sql += ", "
       sql += country[:flag] ? "'#{country[:flag]}'" : "NULL"
       sql += ", "

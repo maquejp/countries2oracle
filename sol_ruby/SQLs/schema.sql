@@ -38,6 +38,8 @@ CREATE TABLE countries (
     population NUMBER(15),
     independent NUMBER(1) DEFAULT 0,
     un_member NUMBER(1) DEFAULT 0,
+    eea_member NUMBER(1) DEFAULT 0,
+    eu_member NUMBER(1) DEFAULT 0,
     flag VARCHAR2(10),
     latitude NUMBER(10,8),
     longitude NUMBER(11,8),
