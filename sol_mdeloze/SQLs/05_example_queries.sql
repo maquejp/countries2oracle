@@ -1,5 +1,5 @@
 -- Example queries for the Countries database
--- Generated on: 2025-07-18 16:35:08
+-- Generated on: 2025-07-18 17:14:59
 
 -- 1. Get all regions with count of countries
 SELECT r.region_name, COUNT(c.country_id) as country_count
@@ -72,5 +72,46 @@ SELECT
     (SELECT COUNT(*) FROM countries) as total_countries,
     (SELECT COUNT(*) FROM countries WHERE independent = 1) as independent_countries,
     (SELECT COUNT(*) FROM countries WHERE un_member = 1) as un_member_countries,
-    (SELECT COUNT(*) FROM countries WHERE landlocked = 1) as landlocked_countries
+    (SELECT COUNT(*) FROM countries WHERE landlocked = 1) as landlocked_countries,
+    (SELECT COUNT(*) FROM countries WHERE eu_member = 1) as eu_member_countries,
+    (SELECT COUNT(*) FROM countries WHERE efta_member = 1) as efta_member_countries,
+    (SELECT COUNT(*) FROM countries WHERE eea_member = 1) as eea_member_countries
 FROM dual;
+
+-- 11. Get all EU member countries
+SELECT c.common_name, c.official_name, r.region_name, c.capital
+FROM countries c
+JOIN regions r ON c.region_id = r.region_id
+WHERE c.eu_member = 1
+ORDER BY c.common_name;
+
+-- 12. Get all EFTA member countries
+SELECT c.common_name, c.official_name, r.region_name, c.capital
+FROM countries c
+JOIN regions r ON c.region_id = r.region_id
+WHERE c.efta_member = 1
+ORDER BY c.common_name;
+
+-- 13. Get all EEA member countries
+SELECT c.common_name, c.official_name, r.region_name, c.capital
+FROM countries c
+JOIN regions r ON c.region_id = r.region_id
+WHERE c.eea_member = 1
+ORDER BY c.common_name;
+
+-- 14. Get countries with multiple memberships
+SELECT c.common_name, c.official_name, 
+       CASE WHEN c.eu_member = 1 THEN 'EU' ELSE '' END ||
+       CASE WHEN c.efta_member = 1 THEN CASE WHEN c.eu_member = 1 THEN ', EFTA' ELSE 'EFTA' END ELSE '' END ||
+       CASE WHEN c.eea_member = 1 THEN CASE WHEN c.eu_member = 1 OR c.efta_member = 1 THEN ', EEA' ELSE 'EEA' END ELSE '' END as memberships
+FROM countries c
+WHERE c.eu_member = 1 OR c.efta_member = 1 OR c.eea_member = 1
+ORDER BY c.common_name;
+
+-- 15. Get countries in Europe that are not EU members
+SELECT c.common_name, c.official_name, c.capital,
+       CASE WHEN c.efta_member = 1 THEN 'EFTA' ELSE 'No EU/EFTA' END as status
+FROM countries c
+JOIN regions r ON c.region_id = r.region_id
+WHERE r.region_name = 'Europe' AND c.eu_member = 0 AND c.independent = 1
+ORDER BY c.common_name;

@@ -1,9 +1,9 @@
 -- Insert statements for COUNTRIES table
--- Generated on: 2025-07-18 16:35:08
+-- Generated on: 2025-07-18 17:14:59
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -18,6 +18,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Asia and the Pacific Group',
+    0,
+    0,
+    0,
     4,
     20,
     'Kabul',
@@ -34,7 +37,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -49,6 +52,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Eastern European Group',
+    0,
+    0,
+    0,
     5,
     18,
     'Tirana',
@@ -65,7 +71,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -80,6 +86,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'African Group',
+    0,
+    0,
+    0,
     1,
     13,
     'Algiers',
@@ -96,7 +105,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -111,6 +120,9 @@ INSERT INTO countries (
     'officially-assigned',
     0,
     '',
+    0,
+    0,
+    0,
     6,
     15,
     'Pago Pago',
@@ -127,7 +139,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -142,6 +154,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Western European and Others Group',
+    0,
+    0,
+    0,
     5,
     21,
     'Andorra la Vella',
@@ -158,7 +173,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -173,6 +188,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'African Group',
+    0,
+    0,
+    0,
     1,
     11,
     'Luanda',
@@ -189,7 +207,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -204,6 +222,9 @@ INSERT INTO countries (
     'officially-assigned',
     0,
     '',
+    0,
+    0,
+    0,
     2,
     2,
     'The Valley',
@@ -220,7 +241,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -235,6 +256,9 @@ INSERT INTO countries (
     'officially-assigned',
     0,
     '',
+    0,
+    0,
+    0,
     3,
     NULL,
     NULL,
@@ -251,7 +275,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -266,6 +290,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Latin American and Caribbean Group',
+    0,
+    0,
+    0,
     2,
     2,
     'Saint John''s',
@@ -282,7 +309,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -297,6 +324,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Latin American and Caribbean Group',
+    0,
+    0,
+    0,
     2,
     16,
     'Buenos Aires',
@@ -313,7 +343,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -328,6 +358,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Eastern European Group',
+    0,
+    0,
+    0,
     4,
     23,
     'Yerevan',
@@ -344,7 +377,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -359,6 +392,9 @@ INSERT INTO countries (
     'officially-assigned',
     0,
     '',
+    0,
+    0,
+    0,
     2,
     2,
     'Oranjestad',
@@ -375,7 +411,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -390,6 +426,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Western European and Others Group',
+    0,
+    0,
+    0,
     6,
     1,
     'Canberra',
@@ -406,7 +445,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -421,6 +460,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Western European and Others Group',
+    1,
+    0,
+    1,
     5,
     5,
     'Vienna',
@@ -437,7 +479,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -452,6 +494,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Eastern European Group',
+    0,
+    0,
+    0,
     4,
     23,
     'Baku',
@@ -468,7 +513,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -483,6 +528,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Latin American and Caribbean Group',
+    0,
+    0,
+    0,
     2,
     2,
     'Nassau',
@@ -499,7 +547,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -514,6 +562,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Asia and the Pacific Group',
+    0,
+    0,
+    0,
     4,
     23,
     'Manama',
@@ -530,7 +581,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -545,6 +596,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Asia and the Pacific Group',
+    0,
+    0,
+    0,
     4,
     20,
     'Dhaka',
@@ -561,7 +615,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -576,6 +630,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Latin American and Caribbean Group',
+    0,
+    0,
+    0,
     2,
     2,
     'Bridgetown',
@@ -592,7 +649,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -607,6 +664,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Eastern European Group',
+    0,
+    0,
+    0,
     5,
     8,
     'Minsk',
@@ -623,7 +683,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -638,6 +698,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Western European and Others Group',
+    1,
+    0,
+    1,
     5,
     24,
     'Brussels',
@@ -654,7 +717,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -669,6 +732,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Latin American and Caribbean Group',
+    0,
+    0,
+    0,
     2,
     3,
     'Belmopan',
@@ -685,7 +751,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -700,6 +766,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'African Group',
+    0,
+    0,
+    0,
     1,
     22,
     'Porto-Novo',
@@ -716,7 +785,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -731,6 +800,9 @@ INSERT INTO countries (
     'officially-assigned',
     0,
     '',
+    0,
+    0,
+    0,
     2,
     12,
     'Hamilton',
@@ -747,7 +819,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -762,6 +834,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Asia and the Pacific Group',
+    0,
+    0,
+    0,
     4,
     20,
     'Thimphu',
@@ -778,7 +853,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -793,6 +868,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Latin American and Caribbean Group',
+    0,
+    0,
+    0,
     2,
     16,
     'Sucre',
@@ -809,7 +887,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -824,6 +902,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Eastern European Group',
+    0,
+    0,
+    0,
     5,
     18,
     'Sarajevo',
@@ -840,7 +921,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -855,6 +936,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'African Group',
+    0,
+    0,
+    0,
     1,
     19,
     'Gaborone',
@@ -871,7 +955,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -886,6 +970,9 @@ INSERT INTO countries (
     'officially-assigned',
     0,
     '',
+    0,
+    0,
+    0,
     3,
     NULL,
     NULL,
@@ -902,7 +989,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -917,6 +1004,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Latin American and Caribbean Group',
+    0,
+    0,
+    0,
     2,
     16,
     'Brasília',
@@ -933,7 +1023,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -948,6 +1038,9 @@ INSERT INTO countries (
     'officially-assigned',
     0,
     '',
+    0,
+    0,
+    0,
     1,
     6,
     'Diego Garcia',
@@ -964,7 +1057,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -979,6 +1072,9 @@ INSERT INTO countries (
     'officially-assigned',
     0,
     '',
+    0,
+    0,
+    0,
     2,
     2,
     'Road Town',
@@ -995,7 +1091,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -1010,6 +1106,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Asia and the Pacific Group',
+    0,
+    0,
+    0,
     4,
     17,
     'Bandar Seri Begawan',
@@ -1026,7 +1125,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -1041,6 +1140,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Eastern European Group',
+    1,
+    0,
+    1,
     5,
     18,
     'Sofia',
@@ -1057,7 +1159,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -1072,6 +1174,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'African Group',
+    0,
+    0,
+    0,
     1,
     22,
     'Ouagadougou',
@@ -1088,7 +1193,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -1103,6 +1208,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'African Group',
+    0,
+    0,
+    0,
     1,
     6,
     'Gitega',
@@ -1119,7 +1227,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -1134,6 +1242,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Asia and the Pacific Group',
+    0,
+    0,
+    0,
     4,
     17,
     'Phnom Penh',
@@ -1150,7 +1261,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -1165,6 +1276,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'African Group',
+    0,
+    0,
+    0,
     1,
     11,
     'Yaoundé',
@@ -1181,7 +1295,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -1196,6 +1310,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Western European and Others Group',
+    0,
+    0,
+    0,
     2,
     12,
     'Ottawa',
@@ -1212,7 +1329,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -1227,6 +1344,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'African Group',
+    0,
+    0,
+    0,
     1,
     22,
     'Praia',
@@ -1243,7 +1363,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -1258,6 +1378,9 @@ INSERT INTO countries (
     'officially-assigned',
     0,
     '',
+    0,
+    0,
+    0,
     2,
     2,
     'Kralendijk, Oranjestad, The Bottom',
@@ -1274,7 +1397,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -1289,6 +1412,9 @@ INSERT INTO countries (
     'officially-assigned',
     0,
     '',
+    0,
+    0,
+    0,
     2,
     2,
     'George Town',
@@ -1305,7 +1431,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -1320,6 +1446,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'African Group',
+    0,
+    0,
+    0,
     1,
     11,
     'Bangui',
@@ -1336,7 +1465,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -1351,6 +1480,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'African Group',
+    0,
+    0,
+    0,
     1,
     11,
     'N''Djamena',
@@ -1367,7 +1499,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -1382,6 +1514,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Latin American and Caribbean Group',
+    0,
+    0,
+    0,
     2,
     16,
     'Santiago',
@@ -1398,7 +1533,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -1413,6 +1548,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Asia and the Pacific Group',
+    0,
+    0,
+    0,
     4,
     7,
     'Beijing',
@@ -1429,7 +1567,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -1444,6 +1582,9 @@ INSERT INTO countries (
     'officially-assigned',
     0,
     '',
+    0,
+    0,
+    0,
     6,
     1,
     'Flying Fish Cove',
@@ -1460,7 +1601,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -1475,6 +1616,9 @@ INSERT INTO countries (
     'officially-assigned',
     0,
     '',
+    0,
+    0,
+    0,
     6,
     1,
     'West Island',
@@ -1491,7 +1635,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -1506,6 +1650,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Latin American and Caribbean Group',
+    0,
+    0,
+    0,
     2,
     16,
     'Bogotá',
@@ -1522,7 +1669,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -1537,6 +1684,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'African Group',
+    0,
+    0,
+    0,
     1,
     6,
     'Moroni',
@@ -1553,7 +1703,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -1568,6 +1718,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'African Group',
+    0,
+    0,
+    0,
     1,
     11,
     'Brazzaville',
@@ -1584,7 +1737,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -1599,6 +1752,9 @@ INSERT INTO countries (
     'officially-assigned',
     0,
     '',
+    0,
+    0,
+    0,
     6,
     15,
     'Avarua',
@@ -1615,7 +1771,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -1630,6 +1786,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Latin American and Caribbean Group',
+    0,
+    0,
+    0,
     2,
     3,
     'San José',
@@ -1646,7 +1805,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -1661,6 +1820,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Eastern European Group',
+    1,
+    0,
+    1,
     5,
     18,
     'Zagreb',
@@ -1677,7 +1839,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -1692,6 +1854,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Latin American and Caribbean Group',
+    0,
+    0,
+    0,
     2,
     2,
     'Havana',
@@ -1708,7 +1873,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -1723,6 +1888,9 @@ INSERT INTO countries (
     'officially-assigned',
     0,
     '',
+    0,
+    0,
+    0,
     2,
     2,
     'Willemstad',
@@ -1739,7 +1907,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -1754,6 +1922,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Asia and the Pacific Group',
+    1,
+    0,
+    1,
     5,
     21,
     'Nicosia',
@@ -1770,7 +1941,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -1785,6 +1956,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Eastern European Group',
+    1,
+    0,
+    1,
     5,
     5,
     'Prague',
@@ -1801,7 +1975,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -1816,6 +1990,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'African Group',
+    0,
+    0,
+    0,
     1,
     11,
     'Kinshasa',
@@ -1832,7 +2009,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -1847,6 +2024,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Western European and Others Group',
+    1,
+    0,
+    1,
     5,
     14,
     'Copenhagen',
@@ -1863,7 +2043,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -1878,6 +2058,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'African Group',
+    0,
+    0,
+    0,
     1,
     6,
     'Djibouti',
@@ -1894,7 +2077,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -1909,6 +2092,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Latin American and Caribbean Group',
+    0,
+    0,
+    0,
     2,
     2,
     'Roseau',
@@ -1925,7 +2111,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -1940,6 +2126,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Latin American and Caribbean Group',
+    0,
+    0,
+    0,
     2,
     2,
     'Santo Domingo',
@@ -1956,7 +2145,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -1971,6 +2160,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Latin American and Caribbean Group',
+    0,
+    0,
+    0,
     2,
     16,
     'Quito',
@@ -1987,7 +2179,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -2002,6 +2194,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'African Group',
+    0,
+    0,
+    0,
     1,
     13,
     'Cairo',
@@ -2018,7 +2213,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -2033,6 +2228,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Latin American and Caribbean Group',
+    0,
+    0,
+    0,
     2,
     3,
     'San Salvador',
@@ -2049,7 +2247,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -2064,6 +2262,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'African Group',
+    0,
+    0,
+    0,
     1,
     11,
     'Malabo',
@@ -2080,7 +2281,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -2095,6 +2296,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'African Group',
+    0,
+    0,
+    0,
     1,
     6,
     'Asmara',
@@ -2111,7 +2315,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -2126,6 +2330,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Eastern European Group',
+    1,
+    0,
+    1,
     5,
     14,
     'Tallinn',
@@ -2142,7 +2349,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -2157,6 +2364,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'African Group',
+    0,
+    0,
+    0,
     1,
     19,
     'Lobamba',
@@ -2173,7 +2383,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -2188,6 +2398,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'African Group',
+    0,
+    0,
+    0,
     1,
     6,
     'Addis Ababa',
@@ -2204,7 +2417,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -2219,6 +2432,9 @@ INSERT INTO countries (
     'officially-assigned',
     0,
     '',
+    0,
+    0,
+    0,
     2,
     16,
     'Stanley',
@@ -2235,7 +2451,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -2250,6 +2466,9 @@ INSERT INTO countries (
     'officially-assigned',
     0,
     '',
+    0,
+    0,
+    0,
     5,
     14,
     'Tórshavn',
@@ -2266,7 +2485,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -2281,6 +2500,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Asia and the Pacific Group',
+    0,
+    0,
+    0,
     6,
     9,
     'Suva',
@@ -2297,7 +2519,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -2312,6 +2534,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Western European and Others Group',
+    1,
+    0,
+    1,
     5,
     14,
     'Helsinki',
@@ -2328,7 +2553,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -2343,6 +2568,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Western European and Others Group',
+    1,
+    0,
+    1,
     5,
     24,
     'Paris',
@@ -2359,7 +2587,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -2374,6 +2602,9 @@ INSERT INTO countries (
     'officially-assigned',
     0,
     '',
+    0,
+    0,
+    0,
     2,
     16,
     'Cayenne',
@@ -2390,7 +2621,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -2405,6 +2636,9 @@ INSERT INTO countries (
     'officially-assigned',
     0,
     '',
+    0,
+    0,
+    0,
     6,
     15,
     'Papeetē',
@@ -2421,7 +2655,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -2436,6 +2670,9 @@ INSERT INTO countries (
     'officially-assigned',
     0,
     '',
+    0,
+    0,
+    0,
     3,
     NULL,
     'Port-aux-Français',
@@ -2452,7 +2689,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -2467,6 +2704,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'African Group',
+    0,
+    0,
+    0,
     1,
     11,
     'Libreville',
@@ -2483,7 +2723,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -2498,6 +2738,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'African Group',
+    0,
+    0,
+    0,
     1,
     22,
     'Banjul',
@@ -2514,7 +2757,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -2529,6 +2772,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Eastern European Group',
+    0,
+    0,
+    0,
     4,
     23,
     'Tbilisi',
@@ -2545,7 +2791,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -2560,6 +2806,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Western European and Others Group',
+    1,
+    0,
+    1,
     5,
     24,
     'Berlin',
@@ -2576,7 +2825,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -2591,6 +2840,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'African Group',
+    0,
+    0,
+    0,
     1,
     22,
     'Accra',
@@ -2607,7 +2859,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -2622,6 +2874,9 @@ INSERT INTO countries (
     'officially-assigned',
     0,
     '',
+    0,
+    0,
+    0,
     5,
     21,
     'Gibraltar',
@@ -2638,7 +2893,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -2653,6 +2908,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Western European and Others Group',
+    1,
+    0,
+    1,
     5,
     21,
     'Athens',
@@ -2669,7 +2927,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -2684,6 +2942,9 @@ INSERT INTO countries (
     'officially-assigned',
     0,
     '',
+    0,
+    0,
+    0,
     2,
     12,
     'Nuuk',
@@ -2700,7 +2961,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -2715,6 +2976,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Latin American and Caribbean Group',
+    0,
+    0,
+    0,
     2,
     2,
     'St. George''s',
@@ -2731,7 +2995,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -2746,6 +3010,9 @@ INSERT INTO countries (
     'officially-assigned',
     0,
     '',
+    0,
+    0,
+    0,
     2,
     2,
     'Basse-Terre',
@@ -2762,7 +3029,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -2777,6 +3044,9 @@ INSERT INTO countries (
     'officially-assigned',
     0,
     '',
+    0,
+    0,
+    0,
     6,
     10,
     'Hagåtña',
@@ -2793,7 +3063,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -2808,6 +3078,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Latin American and Caribbean Group',
+    0,
+    0,
+    0,
     2,
     3,
     'Guatemala City',
@@ -2824,7 +3097,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -2839,6 +3112,9 @@ INSERT INTO countries (
     'officially-assigned',
     0,
     '',
+    0,
+    0,
+    0,
     5,
     14,
     'St. Peter Port',
@@ -2855,7 +3131,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -2870,6 +3146,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'African Group',
+    0,
+    0,
+    0,
     1,
     22,
     'Conakry',
@@ -2886,7 +3165,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -2901,6 +3180,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'African Group',
+    0,
+    0,
+    0,
     1,
     22,
     'Bissau',
@@ -2917,7 +3199,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -2932,6 +3214,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Latin American and Caribbean Group',
+    0,
+    0,
+    0,
     2,
     16,
     'Georgetown',
@@ -2948,7 +3233,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -2963,6 +3248,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Latin American and Caribbean Group',
+    0,
+    0,
+    0,
     2,
     2,
     'Port-au-Prince',
@@ -2979,7 +3267,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -2994,6 +3282,9 @@ INSERT INTO countries (
     'officially-assigned',
     0,
     '',
+    0,
+    0,
+    0,
     3,
     NULL,
     NULL,
@@ -3010,7 +3301,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -3025,6 +3316,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Latin American and Caribbean Group',
+    0,
+    0,
+    0,
     2,
     3,
     'Tegucigalpa',
@@ -3041,7 +3335,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -3056,6 +3350,9 @@ INSERT INTO countries (
     'officially-assigned',
     0,
     '',
+    0,
+    0,
+    0,
     4,
     7,
     'City of Victoria',
@@ -3072,7 +3369,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -3087,6 +3384,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Eastern European Group',
+    1,
+    0,
+    1,
     5,
     5,
     'Budapest',
@@ -3103,7 +3403,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -3118,6 +3418,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Western European and Others Group',
+    0,
+    1,
+    1,
     5,
     14,
     'Reykjavik',
@@ -3134,7 +3437,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -3149,6 +3452,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Asia and the Pacific Group',
+    0,
+    0,
+    0,
     4,
     20,
     'New Delhi',
@@ -3165,7 +3471,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -3180,6 +3486,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Asia and the Pacific Group',
+    0,
+    0,
+    0,
     4,
     17,
     'Jakarta',
@@ -3196,7 +3505,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -3211,6 +3520,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Asia and the Pacific Group',
+    0,
+    0,
+    0,
     4,
     20,
     'Tehran',
@@ -3227,7 +3539,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -3242,6 +3554,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Asia and the Pacific Group',
+    0,
+    0,
+    0,
     4,
     23,
     'Baghdad',
@@ -3258,7 +3573,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -3273,6 +3588,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Western European and Others Group',
+    1,
+    0,
+    1,
     5,
     14,
     'Dublin',
@@ -3289,7 +3607,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -3304,6 +3622,9 @@ INSERT INTO countries (
     'officially-assigned',
     0,
     '',
+    0,
+    0,
+    0,
     5,
     14,
     'Douglas',
@@ -3320,7 +3641,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -3335,6 +3656,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Western European and Others Group',
+    0,
+    0,
+    0,
     4,
     23,
     'Jerusalem',
@@ -3351,7 +3675,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -3366,6 +3690,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Western European and Others Group',
+    1,
+    0,
+    1,
     5,
     21,
     'Rome',
@@ -3382,7 +3709,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -3397,6 +3724,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'African Group',
+    0,
+    0,
+    0,
     1,
     22,
     'Yamoussoukro',
@@ -3413,7 +3743,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -3428,6 +3758,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Latin American and Caribbean Group',
+    0,
+    0,
+    0,
     2,
     2,
     'Kingston',
@@ -3444,7 +3777,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -3459,6 +3792,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Asia and the Pacific Group',
+    0,
+    0,
+    0,
     4,
     7,
     'Tokyo',
@@ -3475,7 +3811,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -3490,6 +3826,9 @@ INSERT INTO countries (
     'officially-assigned',
     0,
     '',
+    0,
+    0,
+    0,
     5,
     14,
     'Saint Helier',
@@ -3506,7 +3845,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -3521,6 +3860,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Asia and the Pacific Group',
+    0,
+    0,
+    0,
     4,
     23,
     'Amman',
@@ -3537,7 +3879,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -3552,6 +3894,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Asia and the Pacific Group',
+    0,
+    0,
+    0,
     4,
     4,
     'Astana',
@@ -3568,7 +3913,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -3583,6 +3928,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'African Group',
+    0,
+    0,
+    0,
     1,
     6,
     'Nairobi',
@@ -3599,7 +3947,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -3614,6 +3962,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Asia and the Pacific Group',
+    0,
+    0,
+    0,
     6,
     10,
     'South Tarawa',
@@ -3630,7 +3981,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -3645,6 +3996,9 @@ INSERT INTO countries (
     'user-assigned',
     0,
     '',
+    0,
+    0,
+    0,
     5,
     18,
     'Pristina',
@@ -3661,7 +4015,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -3676,6 +4030,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Asia and the Pacific Group',
+    0,
+    0,
+    0,
     4,
     23,
     'Kuwait City',
@@ -3692,7 +4049,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -3707,6 +4064,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Asia and the Pacific Group',
+    0,
+    0,
+    0,
     4,
     4,
     'Bishkek',
@@ -3723,7 +4083,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -3738,6 +4098,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Asia and the Pacific Group',
+    0,
+    0,
+    0,
     4,
     17,
     'Vientiane',
@@ -3754,7 +4117,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -3769,6 +4132,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Eastern European Group',
+    1,
+    0,
+    1,
     5,
     14,
     'Riga',
@@ -3785,7 +4151,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -3800,6 +4166,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Asia and the Pacific Group',
+    0,
+    0,
+    0,
     4,
     23,
     'Beirut',
@@ -3816,7 +4185,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -3831,6 +4200,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'African Group',
+    0,
+    0,
+    0,
     1,
     19,
     'Maseru',
@@ -3847,7 +4219,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -3862,6 +4234,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'African Group',
+    0,
+    0,
+    0,
     1,
     22,
     'Monrovia',
@@ -3878,7 +4253,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -3893,6 +4268,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'African Group',
+    0,
+    0,
+    0,
     1,
     13,
     'Tripoli',
@@ -3909,7 +4287,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -3924,6 +4302,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Western European and Others Group',
+    0,
+    1,
+    1,
     5,
     24,
     'Vaduz',
@@ -3940,7 +4321,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -3955,6 +4336,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Eastern European Group',
+    1,
+    0,
+    1,
     5,
     14,
     'Vilnius',
@@ -3971,7 +4355,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -3986,6 +4370,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Western European and Others Group',
+    1,
+    0,
+    1,
     5,
     24,
     'Luxembourg',
@@ -4002,7 +4389,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -4017,6 +4404,9 @@ INSERT INTO countries (
     'officially-assigned',
     0,
     '',
+    0,
+    0,
+    0,
     4,
     7,
     NULL,
@@ -4033,7 +4423,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -4048,6 +4438,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'African Group',
+    0,
+    0,
+    0,
     1,
     6,
     'Antananarivo',
@@ -4064,7 +4457,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -4079,6 +4472,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'African Group',
+    0,
+    0,
+    0,
     1,
     6,
     'Lilongwe',
@@ -4095,7 +4491,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -4110,6 +4506,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Asia and the Pacific Group',
+    0,
+    0,
+    0,
     4,
     17,
     'Kuala Lumpur',
@@ -4126,7 +4525,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -4141,6 +4540,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Asia and the Pacific Group',
+    0,
+    0,
+    0,
     4,
     20,
     'Malé',
@@ -4157,7 +4559,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -4172,6 +4574,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'African Group',
+    0,
+    0,
+    0,
     1,
     22,
     'Bamako',
@@ -4188,7 +4593,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -4203,6 +4608,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Western European and Others Group',
+    1,
+    0,
+    1,
     5,
     21,
     'Valletta',
@@ -4219,7 +4627,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -4234,6 +4642,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Asia and the Pacific Group',
+    0,
+    0,
+    0,
     6,
     10,
     'Majuro',
@@ -4250,7 +4661,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -4265,6 +4676,9 @@ INSERT INTO countries (
     'officially-assigned',
     0,
     '',
+    0,
+    0,
+    0,
     2,
     2,
     'Fort-de-France',
@@ -4281,7 +4695,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -4296,6 +4710,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'African Group',
+    0,
+    0,
+    0,
     1,
     22,
     'Nouakchott',
@@ -4312,7 +4729,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -4327,6 +4744,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'African Group',
+    0,
+    0,
+    0,
     1,
     6,
     'Port Louis',
@@ -4343,7 +4763,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -4358,6 +4778,9 @@ INSERT INTO countries (
     'officially-assigned',
     0,
     '',
+    0,
+    0,
+    0,
     1,
     6,
     'Mamoudzou',
@@ -4374,7 +4797,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -4389,6 +4812,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Latin American and Caribbean Group',
+    0,
+    0,
+    0,
     2,
     12,
     'Mexico City',
@@ -4405,7 +4831,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -4420,6 +4846,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Asia and the Pacific Group',
+    0,
+    0,
+    0,
     6,
     10,
     'Palikir',
@@ -4436,7 +4865,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -4451,6 +4880,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Eastern European Group',
+    0,
+    0,
+    0,
     5,
     8,
     'Chișinău',
@@ -4467,7 +4899,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -4482,6 +4914,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Western European and Others Group',
+    0,
+    0,
+    0,
     5,
     24,
     'Monaco',
@@ -4498,7 +4933,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -4513,6 +4948,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Asia and the Pacific Group',
+    0,
+    0,
+    0,
     4,
     7,
     'Ulan Bator',
@@ -4529,7 +4967,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -4544,6 +4982,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Eastern European Group',
+    0,
+    0,
+    0,
     5,
     18,
     'Podgorica',
@@ -4560,7 +5001,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -4575,6 +5016,9 @@ INSERT INTO countries (
     'officially-assigned',
     0,
     '',
+    0,
+    0,
+    0,
     2,
     2,
     'Plymouth',
@@ -4591,7 +5035,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -4606,6 +5050,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'African Group',
+    0,
+    0,
+    0,
     1,
     13,
     'Rabat',
@@ -4622,7 +5069,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -4637,6 +5084,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'African Group',
+    0,
+    0,
+    0,
     1,
     6,
     'Maputo',
@@ -4653,7 +5103,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -4668,6 +5118,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Asia and the Pacific Group',
+    0,
+    0,
+    0,
     4,
     17,
     'Naypyidaw',
@@ -4684,7 +5137,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -4699,6 +5152,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'African Group',
+    0,
+    0,
+    0,
     1,
     19,
     'Windhoek',
@@ -4715,7 +5171,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -4730,6 +5186,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Asia and the Pacific Group',
+    0,
+    0,
+    0,
     6,
     10,
     'Yaren',
@@ -4746,7 +5205,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -4761,6 +5220,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Asia and the Pacific Group',
+    0,
+    0,
+    0,
     4,
     20,
     'Kathmandu',
@@ -4777,7 +5239,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -4792,6 +5254,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Western European and Others Group',
+    1,
+    0,
+    1,
     5,
     24,
     'Amsterdam',
@@ -4808,7 +5273,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -4823,6 +5288,9 @@ INSERT INTO countries (
     'officially-assigned',
     0,
     '',
+    0,
+    0,
+    0,
     6,
     9,
     'Nouméa',
@@ -4839,7 +5307,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -4854,6 +5322,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Western European and Others Group',
+    0,
+    0,
+    0,
     6,
     1,
     'Wellington',
@@ -4870,7 +5341,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -4885,6 +5356,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Latin American and Caribbean Group',
+    0,
+    0,
+    0,
     2,
     3,
     'Managua',
@@ -4901,7 +5375,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -4916,6 +5390,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'African Group',
+    0,
+    0,
+    0,
     1,
     22,
     'Niamey',
@@ -4932,7 +5409,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -4947,6 +5424,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'African Group',
+    0,
+    0,
+    0,
     1,
     22,
     'Abuja',
@@ -4963,7 +5443,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -4978,6 +5458,9 @@ INSERT INTO countries (
     'officially-assigned',
     0,
     '',
+    0,
+    0,
+    0,
     6,
     15,
     'Alofi',
@@ -4994,7 +5477,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -5009,6 +5492,9 @@ INSERT INTO countries (
     'officially-assigned',
     0,
     '',
+    0,
+    0,
+    0,
     6,
     1,
     'Kingston',
@@ -5025,7 +5511,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -5040,6 +5526,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Asia and the Pacific Group',
+    0,
+    0,
+    0,
     4,
     7,
     'Pyongyang',
@@ -5056,7 +5545,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -5071,6 +5560,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Eastern European Group',
+    0,
+    0,
+    0,
     5,
     18,
     'Skopje',
@@ -5087,7 +5579,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -5102,6 +5594,9 @@ INSERT INTO countries (
     'officially-assigned',
     0,
     '',
+    0,
+    0,
+    0,
     6,
     10,
     'Saipan',
@@ -5118,7 +5613,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -5133,6 +5628,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Western European and Others Group',
+    0,
+    1,
+    1,
     5,
     14,
     'Oslo',
@@ -5149,7 +5647,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -5164,6 +5662,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Asia and the Pacific Group',
+    0,
+    0,
+    0,
     4,
     23,
     'Muscat',
@@ -5180,7 +5681,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -5195,6 +5696,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Asia and the Pacific Group',
+    0,
+    0,
+    0,
     4,
     20,
     'Islamabad',
@@ -5211,7 +5715,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -5226,6 +5730,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Asia and the Pacific Group',
+    0,
+    0,
+    0,
     6,
     10,
     'Ngerulmud',
@@ -5242,7 +5749,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -5257,6 +5764,9 @@ INSERT INTO countries (
     'officially-assigned',
     0,
     '',
+    0,
+    0,
+    0,
     4,
     23,
     'Ramallah',
@@ -5273,7 +5783,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -5288,6 +5798,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Latin American and Caribbean Group',
+    0,
+    0,
+    0,
     2,
     3,
     'Panama City',
@@ -5304,7 +5817,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -5319,6 +5832,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Asia and the Pacific Group',
+    0,
+    0,
+    0,
     6,
     9,
     'Port Moresby',
@@ -5335,7 +5851,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -5350,6 +5866,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Latin American and Caribbean Group',
+    0,
+    0,
+    0,
     2,
     16,
     'Asunción',
@@ -5366,7 +5885,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -5381,6 +5900,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Latin American and Caribbean Group',
+    0,
+    0,
+    0,
     2,
     16,
     'Lima',
@@ -5397,7 +5919,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -5412,6 +5934,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Asia and the Pacific Group',
+    0,
+    0,
+    0,
     4,
     17,
     'Manila',
@@ -5428,7 +5953,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -5443,6 +5968,9 @@ INSERT INTO countries (
     'officially-assigned',
     0,
     '',
+    0,
+    0,
+    0,
     6,
     15,
     'Adamstown',
@@ -5459,7 +5987,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -5474,6 +6002,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Eastern European Group',
+    1,
+    0,
+    1,
     5,
     5,
     'Warsaw',
@@ -5490,7 +6021,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -5505,6 +6036,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Western European and Others Group',
+    1,
+    0,
+    1,
     5,
     21,
     'Lisbon',
@@ -5521,7 +6055,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -5536,6 +6070,9 @@ INSERT INTO countries (
     'officially-assigned',
     0,
     '',
+    0,
+    0,
+    0,
     2,
     2,
     'San Juan',
@@ -5552,7 +6089,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -5567,6 +6104,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Asia and the Pacific Group',
+    0,
+    0,
+    0,
     4,
     23,
     'Doha',
@@ -5583,7 +6123,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -5598,6 +6138,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Eastern European Group',
+    1,
+    0,
+    1,
     5,
     18,
     'Bucharest',
@@ -5614,7 +6157,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -5629,6 +6172,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Eastern European Group',
+    0,
+    0,
+    0,
     5,
     8,
     'Moscow',
@@ -5645,7 +6191,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -5660,6 +6206,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'African Group',
+    0,
+    0,
+    0,
     1,
     6,
     'Kigali',
@@ -5676,7 +6225,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -5691,6 +6240,9 @@ INSERT INTO countries (
     'officially-assigned',
     0,
     '',
+    0,
+    0,
+    0,
     1,
     6,
     'Saint-Denis',
@@ -5707,7 +6259,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -5722,6 +6274,9 @@ INSERT INTO countries (
     'officially-assigned',
     0,
     '',
+    0,
+    0,
+    0,
     2,
     2,
     'Gustavia',
@@ -5738,7 +6293,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -5753,6 +6308,9 @@ INSERT INTO countries (
     'officially-assigned',
     0,
     '',
+    0,
+    0,
+    0,
     1,
     22,
     'Jamestown',
@@ -5769,7 +6327,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -5784,6 +6342,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Latin American and Caribbean Group',
+    0,
+    0,
+    0,
     2,
     2,
     'Basseterre',
@@ -5800,7 +6361,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -5815,6 +6376,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Latin American and Caribbean Group',
+    0,
+    0,
+    0,
     2,
     2,
     'Castries',
@@ -5831,7 +6395,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -5846,6 +6410,9 @@ INSERT INTO countries (
     'officially-assigned',
     0,
     '',
+    0,
+    0,
+    0,
     2,
     2,
     'Marigot',
@@ -5862,7 +6429,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -5877,6 +6444,9 @@ INSERT INTO countries (
     'officially-assigned',
     0,
     '',
+    0,
+    0,
+    0,
     2,
     12,
     'Saint-Pierre',
@@ -5893,7 +6463,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -5908,6 +6478,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Latin American and Caribbean Group',
+    0,
+    0,
+    0,
     2,
     2,
     'Kingstown',
@@ -5924,7 +6497,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -5939,6 +6512,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Asia and the Pacific Group',
+    0,
+    0,
+    0,
     6,
     15,
     'Apia',
@@ -5955,7 +6531,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -5970,6 +6546,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Western European and Others Group',
+    0,
+    0,
+    0,
     5,
     21,
     'City of San Marino',
@@ -5986,7 +6565,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -6001,6 +6580,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Asia and the Pacific Group',
+    0,
+    0,
+    0,
     4,
     23,
     'Riyadh',
@@ -6017,7 +6599,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -6032,6 +6614,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'African Group',
+    0,
+    0,
+    0,
     1,
     22,
     'Dakar',
@@ -6048,7 +6633,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -6063,6 +6648,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Eastern European Group',
+    0,
+    0,
+    0,
     5,
     18,
     'Belgrade',
@@ -6079,7 +6667,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -6094,6 +6682,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'African Group',
+    0,
+    0,
+    0,
     1,
     6,
     'Victoria',
@@ -6110,7 +6701,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -6125,6 +6716,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'African Group',
+    0,
+    0,
+    0,
     1,
     22,
     'Freetown',
@@ -6141,7 +6735,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -6156,6 +6750,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Asia and the Pacific Group',
+    0,
+    0,
+    0,
     4,
     17,
     'Singapore',
@@ -6172,7 +6769,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -6187,6 +6784,9 @@ INSERT INTO countries (
     'officially-assigned',
     0,
     '',
+    0,
+    0,
+    0,
     2,
     2,
     'Philipsburg',
@@ -6203,7 +6803,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -6218,6 +6818,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Eastern European Group',
+    1,
+    0,
+    1,
     5,
     5,
     'Bratislava',
@@ -6234,7 +6837,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -6249,6 +6852,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Eastern European Group',
+    1,
+    0,
+    1,
     5,
     5,
     'Ljubljana',
@@ -6265,7 +6871,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -6280,6 +6886,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Asia and the Pacific Group',
+    0,
+    0,
+    0,
     6,
     9,
     'Honiara',
@@ -6296,7 +6905,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -6311,6 +6920,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'African Group',
+    0,
+    0,
+    0,
     1,
     6,
     'Mogadishu',
@@ -6327,7 +6939,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -6342,6 +6954,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'African Group',
+    0,
+    0,
+    0,
     1,
     19,
     'Pretoria, Bloemfontein, Cape Town',
@@ -6358,7 +6973,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -6373,6 +6988,9 @@ INSERT INTO countries (
     'officially-assigned',
     0,
     '',
+    0,
+    0,
+    0,
     3,
     NULL,
     'King Edward Point',
@@ -6389,7 +7007,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -6404,6 +7022,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Asia and the Pacific Group',
+    0,
+    0,
+    0,
     4,
     7,
     'Seoul',
@@ -6420,7 +7041,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -6435,6 +7056,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'African Group',
+    0,
+    0,
+    0,
     1,
     11,
     'Juba',
@@ -6451,7 +7075,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -6466,6 +7090,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Western European and Others Group',
+    1,
+    0,
+    1,
     5,
     21,
     'Madrid',
@@ -6482,7 +7109,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -6497,6 +7124,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Asia and the Pacific Group',
+    0,
+    0,
+    0,
     4,
     20,
     'Colombo',
@@ -6513,7 +7143,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -6528,6 +7158,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'African Group',
+    0,
+    0,
+    0,
     1,
     13,
     'Khartoum',
@@ -6544,7 +7177,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -6559,6 +7192,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Latin American and Caribbean Group',
+    0,
+    0,
+    0,
     2,
     16,
     'Paramaribo',
@@ -6575,7 +7211,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -6590,6 +7226,9 @@ INSERT INTO countries (
     'officially-assigned',
     0,
     '',
+    0,
+    0,
+    0,
     5,
     14,
     'Longyearbyen',
@@ -6606,7 +7245,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -6621,6 +7260,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Western European and Others Group',
+    1,
+    0,
+    1,
     5,
     14,
     'Stockholm',
@@ -6637,7 +7279,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -6652,6 +7294,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Western European and Others Group',
+    0,
+    1,
+    0,
     5,
     24,
     'Bern',
@@ -6668,7 +7313,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -6683,6 +7328,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Asia and the Pacific Group',
+    0,
+    0,
+    0,
     4,
     23,
     'Damascus',
@@ -6699,7 +7347,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -6714,6 +7362,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'African Group',
+    0,
+    0,
+    0,
     1,
     11,
     'São Tomé',
@@ -6730,7 +7381,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -6745,6 +7396,9 @@ INSERT INTO countries (
     'officially-assigned',
     0,
     '',
+    0,
+    0,
+    0,
     4,
     7,
     'Taipei',
@@ -6761,7 +7415,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -6776,6 +7430,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Asia and the Pacific Group',
+    0,
+    0,
+    0,
     4,
     4,
     'Dushanbe',
@@ -6792,7 +7449,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -6807,6 +7464,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'African Group',
+    0,
+    0,
+    0,
     1,
     6,
     'Dodoma',
@@ -6823,7 +7483,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -6838,6 +7498,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Asia and the Pacific Group',
+    0,
+    0,
+    0,
     4,
     17,
     'Bangkok',
@@ -6854,7 +7517,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -6869,6 +7532,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Asia and the Pacific Group',
+    0,
+    0,
+    0,
     4,
     17,
     'Dili',
@@ -6885,7 +7551,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -6900,6 +7566,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'African Group',
+    0,
+    0,
+    0,
     1,
     22,
     'Lomé',
@@ -6916,7 +7585,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -6931,6 +7600,9 @@ INSERT INTO countries (
     'officially-assigned',
     0,
     '',
+    0,
+    0,
+    0,
     6,
     15,
     'Fakaofo',
@@ -6947,7 +7619,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -6962,6 +7634,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Asia and the Pacific Group',
+    0,
+    0,
+    0,
     6,
     15,
     'Nuku''alofa',
@@ -6978,7 +7653,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -6993,6 +7668,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Latin American and Caribbean Group',
+    0,
+    0,
+    0,
     2,
     2,
     'Port of Spain',
@@ -7009,7 +7687,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -7024,6 +7702,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'African Group',
+    0,
+    0,
+    0,
     1,
     13,
     'Tunis',
@@ -7040,7 +7721,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -7055,6 +7736,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Asia and the Pacific Group',
+    0,
+    0,
+    0,
     4,
     4,
     'Ashgabat',
@@ -7071,7 +7755,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -7086,6 +7770,9 @@ INSERT INTO countries (
     'officially-assigned',
     0,
     '',
+    0,
+    0,
+    0,
     2,
     2,
     'Cockburn Town',
@@ -7102,7 +7789,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -7117,6 +7804,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Asia and the Pacific Group',
+    0,
+    0,
+    0,
     6,
     15,
     'Funafuti',
@@ -7133,7 +7823,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -7148,6 +7838,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Western European and Others Group',
+    0,
+    0,
+    0,
     4,
     23,
     'Ankara',
@@ -7164,7 +7857,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -7179,6 +7872,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'African Group',
+    0,
+    0,
+    0,
     1,
     6,
     'Kampala',
@@ -7195,7 +7891,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -7210,6 +7906,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Eastern European Group',
+    0,
+    0,
+    0,
     5,
     8,
     'Kyiv',
@@ -7226,7 +7925,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -7241,6 +7940,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Asia and the Pacific Group',
+    0,
+    0,
+    0,
     4,
     23,
     'Abu Dhabi',
@@ -7257,7 +7959,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -7272,6 +7974,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Western European and Others Group',
+    0,
+    0,
+    0,
     5,
     14,
     'London',
@@ -7288,7 +7993,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -7303,6 +8008,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Western European and Others Group',
+    0,
+    0,
+    0,
     2,
     12,
     'Washington D.C.',
@@ -7319,7 +8027,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -7334,6 +8042,9 @@ INSERT INTO countries (
     'officially-assigned',
     0,
     '',
+    0,
+    0,
+    0,
     2,
     12,
     NULL,
@@ -7350,7 +8061,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -7365,6 +8076,9 @@ INSERT INTO countries (
     'officially-assigned',
     0,
     '',
+    0,
+    0,
+    0,
     2,
     2,
     'Charlotte Amalie',
@@ -7381,7 +8095,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -7396,6 +8110,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Latin American and Caribbean Group',
+    0,
+    0,
+    0,
     2,
     16,
     'Montevideo',
@@ -7412,7 +8129,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -7427,6 +8144,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Asia and the Pacific Group',
+    0,
+    0,
+    0,
     4,
     4,
     'Tashkent',
@@ -7443,7 +8163,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -7458,6 +8178,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Asia and the Pacific Group',
+    0,
+    0,
+    0,
     6,
     9,
     'Port Vila',
@@ -7474,7 +8197,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -7489,6 +8212,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     '',
+    0,
+    0,
+    0,
     5,
     21,
     'Vatican City',
@@ -7505,7 +8231,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -7520,6 +8246,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Latin American and Caribbean Group',
+    0,
+    0,
+    0,
     2,
     16,
     'Caracas',
@@ -7536,7 +8265,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -7551,6 +8280,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Asia and the Pacific Group',
+    0,
+    0,
+    0,
     4,
     17,
     'Hanoi',
@@ -7567,7 +8299,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -7582,6 +8314,9 @@ INSERT INTO countries (
     'officially-assigned',
     0,
     '',
+    0,
+    0,
+    0,
     6,
     15,
     'Mata-Utu',
@@ -7598,7 +8333,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -7613,6 +8348,9 @@ INSERT INTO countries (
     'officially-assigned',
     0,
     '',
+    0,
+    0,
+    0,
     1,
     13,
     'El Aaiún',
@@ -7629,7 +8367,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -7644,6 +8382,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'Asia and the Pacific Group',
+    0,
+    0,
+    0,
     4,
     23,
     'Sana''a',
@@ -7660,7 +8401,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -7675,6 +8416,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'African Group',
+    0,
+    0,
+    0,
     1,
     6,
     'Lusaka',
@@ -7691,7 +8435,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -7706,6 +8450,9 @@ INSERT INTO countries (
     'officially-assigned',
     1,
     'African Group',
+    0,
+    0,
+    0,
     1,
     6,
     'Harare',
@@ -7722,7 +8469,7 @@ INSERT INTO countries (
 
 INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -7737,6 +8484,9 @@ INSERT INTO countries (
     'officially-assigned',
     0,
     '',
+    0,
+    0,
+    0,
     5,
     14,
     'Mariehamn',

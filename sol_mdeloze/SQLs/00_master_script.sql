@@ -1,5 +1,5 @@
 -- Master script to execute all SQL files
--- Generated on: 2025-07-18 16:35:08
+-- Generated on: 2025-07-18 17:14:59
 -- Execute this script to create and populate the entire database
 
 PROMPT Creating tables...

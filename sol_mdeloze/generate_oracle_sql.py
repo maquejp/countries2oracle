@@ -107,6 +107,9 @@ CREATE TABLE countries (
     status VARCHAR2(50),
     un_member NUMBER(1) DEFAULT 0,
     un_regional_group VARCHAR2(100),
+    eu_member NUMBER(1) DEFAULT 0,
+    efta_member NUMBER(1) DEFAULT 0,
+    eea_member NUMBER(1) DEFAULT 0,
     
     -- Geographic information
     region_id NUMBER,
@@ -139,6 +142,9 @@ CREATE INDEX idx_countries_cca2 ON countries(cca2);
 CREATE INDEX idx_countries_cca3 ON countries(cca3);
 CREATE INDEX idx_countries_independent ON countries(independent);
 CREATE INDEX idx_countries_un_member ON countries(un_member);
+CREATE INDEX idx_countries_eu_member ON countries(eu_member);
+CREATE INDEX idx_countries_efta_member ON countries(efta_member);
+CREATE INDEX idx_countries_eea_member ON countries(eea_member);
 
 -- Add comments to tables
 COMMENT ON TABLE regions IS 'World regions (continents)';
@@ -271,6 +277,9 @@ COMMIT;
             status = country.get('status', '')
             un_member = 1 if country.get('unMember', False) else 0
             un_regional_group = country.get('unRegionalGroup', '')
+            eu_member = 1 if country.get('euMember', False) else 0
+            efta_member = 1 if country.get('eftaMember', False) else 0
+            eea_member = 1 if country.get('eeaMember', False) else 0
             
             # Geographic
             region = country.get('region', '')
@@ -295,7 +304,7 @@ COMMIT;
             # Build INSERT statement
             sql_content += f"""INSERT INTO countries (
     country_id, common_name, official_name, cca2, cca3, ccn3, cioc,
-    independent, status, un_member, un_regional_group,
+    independent, status, un_member, un_regional_group, eu_member, efta_member, eea_member,
     region_id, subregion_id, capital, latlng, landlocked, borders, area,
     tld, currencies, languages, alt_spellings, flag_emoji
 ) VALUES (
@@ -310,6 +319,9 @@ COMMIT;
     {self.escape_sql_string(status)},
     {un_member},
     {self.escape_sql_string(un_regional_group)},
+    {eu_member},
+    {efta_member},
+    {eea_member},
     {region_id if region_id else 'NULL'},
     {subregion_id if subregion_id else 'NULL'},
     {self.escape_sql_string(capital) if capital else 'NULL'},
@@ -412,8 +424,49 @@ SELECT
     (SELECT COUNT(*) FROM countries) as total_countries,
     (SELECT COUNT(*) FROM countries WHERE independent = 1) as independent_countries,
     (SELECT COUNT(*) FROM countries WHERE un_member = 1) as un_member_countries,
-    (SELECT COUNT(*) FROM countries WHERE landlocked = 1) as landlocked_countries
+    (SELECT COUNT(*) FROM countries WHERE landlocked = 1) as landlocked_countries,
+    (SELECT COUNT(*) FROM countries WHERE eu_member = 1) as eu_member_countries,
+    (SELECT COUNT(*) FROM countries WHERE efta_member = 1) as efta_member_countries,
+    (SELECT COUNT(*) FROM countries WHERE eea_member = 1) as eea_member_countries
 FROM dual;
+
+-- 11. Get all EU member countries
+SELECT c.common_name, c.official_name, r.region_name, c.capital
+FROM countries c
+JOIN regions r ON c.region_id = r.region_id
+WHERE c.eu_member = 1
+ORDER BY c.common_name;
+
+-- 12. Get all EFTA member countries
+SELECT c.common_name, c.official_name, r.region_name, c.capital
+FROM countries c
+JOIN regions r ON c.region_id = r.region_id
+WHERE c.efta_member = 1
+ORDER BY c.common_name;
+
+-- 13. Get all EEA member countries
+SELECT c.common_name, c.official_name, r.region_name, c.capital
+FROM countries c
+JOIN regions r ON c.region_id = r.region_id
+WHERE c.eea_member = 1
+ORDER BY c.common_name;
+
+-- 14. Get countries with multiple memberships
+SELECT c.common_name, c.official_name, 
+       CASE WHEN c.eu_member = 1 THEN 'EU' ELSE '' END ||
+       CASE WHEN c.efta_member = 1 THEN CASE WHEN c.eu_member = 1 THEN ', EFTA' ELSE 'EFTA' END ELSE '' END ||
+       CASE WHEN c.eea_member = 1 THEN CASE WHEN c.eu_member = 1 OR c.efta_member = 1 THEN ', EEA' ELSE 'EEA' END ELSE '' END as memberships
+FROM countries c
+WHERE c.eu_member = 1 OR c.efta_member = 1 OR c.eea_member = 1
+ORDER BY c.common_name;
+
+-- 15. Get countries in Europe that are not EU members
+SELECT c.common_name, c.official_name, c.capital,
+       CASE WHEN c.efta_member = 1 THEN 'EFTA' ELSE 'No EU/EFTA' END as status
+FROM countries c
+JOIN regions r ON c.region_id = r.region_id
+WHERE r.region_name = 'Europe' AND c.eu_member = 0 AND c.independent = 1
+ORDER BY c.common_name;
 """
         
         # Write to file
@@ -497,16 +550,27 @@ def main():
     """Main function"""
     import sys
     
-    # Default values
-    json_file = "countries.json"
+    # Default values - use amended file if available, otherwise original
+    json_file = "countries_amended.json" if os.path.exists("countries_amended.json") else "countries.json"
     output_dir = "SQLs"
+    
+    # Check for command line arguments
+    if len(sys.argv) > 1:
+        json_file = sys.argv[1]
+    if len(sys.argv) > 2:
+        output_dir = sys.argv[2]
     
     # Check if JSON file exists
     if not os.path.exists(json_file):
         print(f"Error: {json_file} not found!")
-        print("Please download the countries.json file from:")
-        print("https://raw.githubusercontent.com/mledoze/countries/master/countries.json")
+        if json_file == "countries_amended.json":
+            print("Run 'python3 add_membership_fields.py' first to create the amended file.")
+        else:
+            print("Please download the countries.json file from:")
+            print("https://raw.githubusercontent.com/mledoze/countries/master/countries.json")
         sys.exit(1)
+    
+    print(f"Using JSON file: {json_file}")
     
     # Create generator and run
     generator = OracleSQLGenerator(json_file, output_dir)

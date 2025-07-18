@@ -1,5 +1,5 @@
 -- Insert statements for REGIONS table
--- Generated on: 2025-07-18 16:35:08
+-- Generated on: 2025-07-18 17:14:59
 
 INSERT INTO regions (region_id, region_name) VALUES (1, 'Africa');
 INSERT INTO regions (region_id, region_name) VALUES (2, 'Americas');
